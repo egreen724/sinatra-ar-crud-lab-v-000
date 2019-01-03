@@ -22,5 +22,11 @@ class ApplicationController < Sinatra::Base
   get '/articles' do
     @articles 
     
+    erb :index 
   end
+  
+  get '/articles/:id' do 
+  
+  end
+  
 end
