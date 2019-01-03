@@ -12,7 +12,8 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/articles/new' do 
-    Article.create(title: params[:title], content: params[:content])
+    article = Article.create(title: params[:title], content: params[:content])
+    article.save 
     erb :new 
   end
   
