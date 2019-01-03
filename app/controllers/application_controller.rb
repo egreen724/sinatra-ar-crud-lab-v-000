@@ -21,13 +21,15 @@ class ApplicationController < Sinatra::Base
   
   get '/articles' do
     @articles 
-    
+      #add Active Record for all articles
     erb :index 
   end
   
   get '/articles/:id' do 
-  
+      #add Active Record for articles by index
     erb :show 
   end
+  
+  
   
 end
