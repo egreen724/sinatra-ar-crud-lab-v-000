@@ -12,6 +12,7 @@ class ApplicationController < Sinatra::Base
     redirect to "/articles"
   end
   
+  #create 
   get '/articles/new' do 
     @article = Article.new 
     erb :new 
@@ -35,6 +36,7 @@ class ApplicationController < Sinatra::Base
     erb :show 
   end
   
+  #update
   get 'articles/:id/edit' do 
     
     erb :edit 
